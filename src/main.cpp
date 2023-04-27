@@ -37,7 +37,7 @@ void loop() {
   if (timestamp1 + 100 < millis())
   {
     potValue1 = analogRead(potPin1);
-    speed1 = map(potValue1, 0, 1023, 100, 350);
+    speed1 = map(potValue1, 0, 1023, 10, 350);
 
     Serial.print("Speed 1: " + String(speed1) + "\n");
 
